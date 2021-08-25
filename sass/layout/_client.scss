@@ -1,0 +1,48 @@
+.client-title {
+  margin: 0 0 50px 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+.client {
+  display: flex;
+  justify-content: center;
+}
+.client-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.client-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition-property: border-color;
+}
+.client-card:hover,
+.client-card:focus {
+  border-color: var(--secondary-color);
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-logo {
+  fill: #afb1b8;
+  transition-property: fill;
+}
+
+.client-card:hover > .icon-logo,
+.client-card:focus > .icon-logo {
+  fill: var(--secondary-color);
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

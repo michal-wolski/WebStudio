@@ -1,0 +1,26 @@
+.about-icon-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 100px 25px 100px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.about-us-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us-list h3 {
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.about-us-list p {
+  font-size: 14px;
+  color: var(--additional-color);
+}
+.about-us-item:not(:last-child) {
+  margin-right: 30px;
+}

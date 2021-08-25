@@ -12,6 +12,7 @@ body {
   --additional-color: #757575;
   --bgbutton-portfolio: #f5f4fa;
 }
+
 h1 h2,
 h3,
 h4,
@@ -50,6 +51,23 @@ button {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+h2 {
+  font-size: 18px;
+  line-height: 2;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.logo-color-header {
+  color: var(--secondary-color);
+}
+
+.logo-color-footer {
+  color: var(--secondary-color);
 }
 /* HERO */
 .hero {
@@ -218,9 +236,6 @@ a:focus {
 .about-us-item:not(:last-child) {
   margin-right: 30px;
 }
-.about-us-item {
-}
-
 /* === END ABOUT US === */
 
 /* === WORK === */
@@ -491,24 +506,6 @@ a:focus {
   margin: 0;
 }
 /* === END PORTFOLIO === */
-h2 {
-  font-size: 18px;
-  line-height: 2;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.87;
-}
-
-.logo-color-header {
-  color: var(--secondary-color);
-}
-
-.logo-color-footer {
-  color: var(--secondary-color);
-}
-
 /* end main pages style */
 /* === FOOTER === */
 
