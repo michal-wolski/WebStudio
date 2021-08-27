@@ -12,7 +12,6 @@ body {
   --additional-color: #757575;
   --bgbutton-portfolio: #f5f4fa;
 }
-
 h1 h2,
 h3,
 h4,
@@ -51,23 +50,6 @@ button {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-h2 {
-  font-size: 18px;
-  line-height: 2;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.87;
-}
-
-.logo-color-header {
-  color: var(--secondary-color);
-}
-
-.logo-color-footer {
-  color: var(--secondary-color);
 }
 /* HERO */
 .hero {
@@ -314,7 +296,7 @@ a:focus {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--additional-color);
+  color: #757575;
   margin-bottom: 16px;
 }
 
@@ -430,7 +412,6 @@ a:focus {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  text-align: center;
   letter-spacing: 0.03em;
   background-color: var(--bgbutton-portfolio);
   border-radius: 4px;
@@ -505,7 +486,43 @@ a:focus {
 .portfolio-list .title {
   margin: 0;
 }
+.title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--additional-color);
+}
 /* === END PORTFOLIO === */
+h2 {
+  font-size: 18px;
+  line-height: 2;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.logo-color-header {
+  color: var(--secondary-color);
+}
+
+.logo-color-footer {
+  color: var(--secondary-color);
+}
+
 /* end main pages style */
 /* === FOOTER === */
 
@@ -744,7 +761,6 @@ a:focus {
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
-  right: 418px;
   display: block;
   transition-property: fill;
 }
