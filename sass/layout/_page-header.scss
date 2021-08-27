@@ -7,6 +7,7 @@
   padding-bottom: 25px;
   align-items: center;
 }
+
 .nav-icon {
   margin-right: 10px;
   align-content: center;
@@ -32,15 +33,7 @@
   border-radius: 2px;
   background-color: var(--secondary-color);
 }
-.logo-header {
-  margin-right: 93px;
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
+
 .navigation {
   display: flex;
   align-items: center;
@@ -57,20 +50,7 @@
 .tel-nav {
   margin-left: 50px;
 }
-a {
-  color: var(--main-color);
-  font-weight: 500;
-  font-size: 14px;
-  list-style-type: none;
-  text-decoration: none;
-  transition-property: color;
-}
-a:hover,
-a:focus {
-  color: var(--secondary-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .mail {
   font-weight: 500;
   font-size: 14px;

@@ -1,7 +1,15 @@
-@import "./components/hideen";
+@import "./utils/_visually-hidden";
 @import "./base/reset";
 @import "./base/container";
 @import "./base/section";
+
+@import "./components/modal";
+@import "./components/backdrop";
+@import "./components/logo-header";
+@import "./components/secondary-title";
+@import "./components/logo-footer";
+@import "./components/title";
+
 @import "./layout/page-header";
 @import "./layout/hero";
 @import "./layout/about";
@@ -9,5 +17,4 @@
 @import "./layout/team";
 @import "./layout/client";
 @import "./layout/footer";
-@import "./layout/backdrop";
 @import "./layout/portfolio";

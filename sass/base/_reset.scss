@@ -12,14 +12,22 @@ body {
   --additional-color: #757575;
   --bgbutton-portfolio: #f5f4fa;
 }
-h1,
-h2,
+h1 h2,
 h3,
 h4,
 h5,
 h6 {
   margin: 0;
   padding: 0;
+}
+h2 {
+  font-size: 18px;
+  line-height: 2;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.87;
 }
 ul,
 ol {
@@ -43,20 +51,17 @@ button {
 .link {
   text-decoration: none;
 }
-h2 {
-  font-size: 18px;
-  line-height: 2;
+a {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 14px;
+  list-style-type: none;
+  text-decoration: none;
+  transition-property: color;
 }
-
-p {
-  font-size: 16px;
-  line-height: 1.87;
-}
-
-.logo-color-header {
+a:hover,
+a:focus {
   color: var(--secondary-color);
-}
-
-.logo-color-footer {
-  color: var(--secondary-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

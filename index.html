@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./css/modern-normalize.css">
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
   <title>WebStudio</title>
 </head>
 
@@ -18,7 +18,7 @@
   <header class="header">
     <div class="container">
       <nav class="navigation">
-        <a class="logo-header link" href="./index.html"><span class="logo-color-header">Web</span>Studio</a>
+        <a class="logo-header" href="./index.html"><span class="header__logo--color">Web</span>Studio</a>
         <ul class="navigation-list list link">
           <li class="navigation-item link"><a class="active" href="./index.html">Agencja</a></li>
           <li class="navigation-item link"><a href="./portfolio.html">Portfolio</a></li>
@@ -251,7 +251,7 @@
     <div class="container">
       <div class="footer-staff">
         <div>
-          <a class="logo-footer link" href="./index.html"><span class="logo-color-footer">Web</span>Studio</a>
+          <a class="footer__logo" href="./index.html"><span class="footer__logo--color">Web</span>Studio</a>
           <address>
             <ul class="address">
               <li class="item"><span class="street"> Warszawa, Aleje Jerozolimskie 21</span></li>
@@ -297,41 +297,41 @@
   </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="modal-btn" type="button" data-modal-close><svg>
+      <button class="modal__btn" type="button" data-modal-close><svg>
           <use href="./images/icons.svg#icon-modal-close">
         </svg></button>
-      <h2 class="modal__form-header">Zostaw swoje dane w formularzu poniżej</h2>
+      <h2 class="modal__form--header">Zostaw swoje dane w formularzu poniżej</h2>
       <form action="#" class="modal__form">
-        <label for="" class="modal__form-field">
+        <label for="" class="modal__form--field">
           Imie
-          <span class="modal__form-input-wrapper">
-            <input type="text" name="user_name" class="modal__form-input">
-            <span class="modal__form-icon"><svg width=12 height=12>
+          <span class="modal__form--input--wrapper">
+            <input type="text" name="user_name" class="modal__form--input">
+            <span class="modal__form--icon"><svg width=12 height=12>
                 <use href="./images/icons.svg#icon-user"></use>
               </svg></span>
           </span>
         </label>
-        <label class="modal__form-field">
+        <label class="modal__form--field">
           Telefon
-          <span class="modal__form-input-wrapper">
-            <input type="tel" name="user_tel" class="modal__form-input">
-            <span class="modal__form-icon"><svg width=13 height=13>
+          <span class="modal__form--input--wrapper">
+            <input type="tel" name="user_tel" class="modal__form--input">
+            <span class="modal__form--icon"><svg width=13 height=13>
                 <use href="./images/icons.svg#icon-tel"></use>
               </svg></span></span>
         </label>
-        <label class="modal__form-field">
+        <label class="modal__form--field">
           Email
-          <span class="modal__form-input-wrapper"><input type="email" name="user_mail" class="modal__form-input"><span
-              class="modal__form-icon"><svg width=15 height=12>
+          <span class="modal__form--input--wrapper"><input type="email" name="user_mail"
+              class="modal__form--input"><span class="modal__form--icon"><svg width=15 height=12>
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg></span></span>
         </label>
-        <label class="modal__form-field">
+        <label class="modal__form--field">
           Komentarz
           <textarea class="modal__form-message" name="user_message" cols="30" rows="10"
             placeholder="Wprowadź tekst"></textarea>
         </label>
-        <input type="checkbox" class="modal__form-policy modal__hidden-checkbox" id="user-policy" name="user_policy"
+        <input type="checkbox" class="modal__form-policy visually-hidden" id="user-policy" name="user_policy"
           value="accept-policy">
         <label for="user-policy" class="modal__form-policy-text">Oświadczam iż akceptuję <a class="modal__form-link"
             href="#">Regulamin</a>

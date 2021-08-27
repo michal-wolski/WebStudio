@@ -6,6 +6,7 @@
 .footer .container {
   padding-top: 60px;
 }
+
 .address {
   list-style: none;
   display: flex;
@@ -13,23 +14,6 @@
   gap: 9px;
   margin-bottom: 60px;
   padding-top: 20px;
-}
-
-.logo-footer {
-  padding-top: 60px;
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  color: var(--third-color);
-  transition-property: color;
-}
-
-.logo-footer:hover {
-  color: var(--secondary-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
