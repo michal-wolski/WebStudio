@@ -3,9 +3,13 @@
   justify-content: center;
   margin-bottom: 34px;
   gap: 9px;
+
+  &:active {
+    color: #2196f3;
+  }
 }
 
-.filters .button {
+.filters__button {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -14,43 +18,41 @@
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
   transition-property: background-color, color, box-shadow;
+
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.filters .button:hover,
-.filters .button:focus {
-  background-color: var(--secondary-color);
-  color: var(--third-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.filter:active {
-  color: #2196f3;
-}
-
-.portfolio-list {
+.portfolio {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.portfolio-item {
+.portfolio__item {
   background: #ffffff;
+
+  &:hover,
+  &:focus {
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
-.portfolio-item:hover,
-.portfolio-item:focus {
-  box-sizing: border-box;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.portfolio-img {
+
+.portfolio__img {
   position: relative;
   overflow: hidden;
 }
-.overlay {
+.portfolio__overlay {
   background-color: rgba(33, 150, 243, 0.9);
   position: absolute;
   top: 0;
@@ -64,15 +66,14 @@
   line-height: 1.555;
   letter-spacing: 0.03em;
 }
-.portfolio-item:hover .overlay,
-.portfolio-item:focus .overlay,
-.portfolio-item:hover .overlay,
-.portfolio-item:focus .overlay {
+
+.portfolio__item:hover .overlay,
+.portfolio__item:focus .overlay {
   transform: translateY(0);
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.description {
+.portfolio__description {
   padding: 20px 24px 20px 24px;
   border: 1px solid #eeeeee;
   display: flex;
@@ -80,22 +81,16 @@
   justify-content: center;
   align-items: flex-start;
 }
-.portfolio-list .title {
+
+.portfolio__title {
   margin: 0;
-}
-.title {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
   color: #212121;
 }
-.text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+.portfolio__text {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;

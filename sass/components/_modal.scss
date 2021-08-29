@@ -48,7 +48,7 @@
   letter-spacing: 0.01em;
   color: var(--additional-color);
 }
-.modal__form-input--wrapper {
+.modal__form--input-wrapper {
   position: relative;
   display: block;
   margin-top: 4px;
@@ -71,7 +71,7 @@
   display: block;
   transition-property: fill;
 }
-.modal__form-message {
+.modal__form--message {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
@@ -82,7 +82,7 @@
   resize: none;
   transition-property: border-color;
 }
-.modal__form-link {
+.modal__form--link {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -90,7 +90,7 @@
   text-decoration-line: underline;
   color: var(--secondary-color);
 }
-.modal__form-button {
+.modal__form--button {
   padding: 10px 76px 10px 76px;
   margin: 0 auto;
   margin-top: 30px;
@@ -103,43 +103,45 @@
   letter-spacing: 0.06em;
   color: var(--third-color);
 }
-.modal__form-policy-text {
+.modal__form--policy-text {
   padding-top: 20px;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--additional-color);
+
+  &::before {
+    content: "";
+    position: relative;
+    top: 1px;
+    background: url(../images/uncheck.svg);
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+  }
 }
-.modal__form-policy-text::before {
-  content: "";
-  position: relative;
-  top: 1px;
-  background: url(../images/uncheck.svg);
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
-}
-.modal__form-policy:checked + .modal__form-policy-text::before {
+
+.modal__form--policy:checked + .modal__form--policy-text::before {
   background-image: url(../images/check.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--secondary-color);
   border-radius: 2px;
 }
-.modal__form-message:focus {
+.modal__form--message:focus {
   outline: none;
   border-color: var(--secondary-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__form-input:focus {
+.modal__form--input:focus {
   outline: none;
   border-color: var(--secondary-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__form-input:focus + .modal__form-icon {
+.modal__form--input:focus + .modal__form--icon {
   fill: var(--secondary-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

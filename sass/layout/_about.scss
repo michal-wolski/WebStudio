@@ -1,4 +1,4 @@
-.about-icon-bg {
+.about-us__icon-bg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,21 +6,17 @@
   background: #f5f4fa;
   border-radius: 4px;
 }
-.about-us-list {
+.about-us__list {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
-.about-us-list h3 {
-  font-weight: bold;
-  font-size: 14px;
+.about-us__title {
   padding-top: 30px;
   padding-bottom: 10px;
 }
-.about-us-list p {
+.about-us__text {
   font-size: 14px;
   color: var(--additional-color);
-}
-.about-us-item:not(:last-child) {
-  margin-right: 30px;
 }
