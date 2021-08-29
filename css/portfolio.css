@@ -276,8 +276,8 @@ a:focus {
   letter-spacing: 0.03em;
 }
 
-.portfolio__item:hover .overlay,
-.portfolio__item:focus .overlay {
+.portfolio__item:hover .portfolio__overlay,
+.portfolio__item:focus .portfolio__overlay {
   transform: translateY(0);
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
