@@ -463,18 +463,23 @@ a:focus {
   margin-top: 94px;
 }
 
-.work-list {
+.work__title {
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.work__list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.work-list-item {
+.work__list-item {
   display: flex;
   position: relative;
 }
 
-.work-item {
+.work__list-text {
   display: flex;
   justify-content: center;
   font-weight: bold;
@@ -489,31 +494,29 @@ a:focus {
   top: 224px;
 }
 
-.work__title {
-  margin-top: 90px;
-  margin-bottom: 50px;
-}
-
 .team {
   background-color: #f5f4fa;
-}
-
-.team-list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-.team-card {
-  max-width: 270px;
-  max-height: 428px;
 }
 
 .team__title {
   margin: 0 0 50px 0;
 }
 
-.team-name {
+.team__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.team__card {
+  max-width: 270px;
+  max-height: 428px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__name {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -524,8 +527,7 @@ a:focus {
   margin-top: 30px;
 }
 
-.team-text {
-  font-family: Roboto;
+.team__text {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -534,20 +536,14 @@ a:focus {
   margin-bottom: 16px;
 }
 
-.team .team-card {
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.social {
+.team__social {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-bottom: 18px;
 }
 
-.social-links {
+.team__social-links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -560,8 +556,7 @@ a:focus {
   transition-property: background-color, fill, color;
 }
 
-.social-links:hover,
-.social-links:focus {
+.team__social-links:hover, .team__social-links:focus {
   background-color: var(--secondary-color);
   fill: #ffffff;
   color: #ffffff;

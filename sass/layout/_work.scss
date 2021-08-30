@@ -1,16 +1,20 @@
 .work {
   margin-top: 94px;
 }
-.work-list {
+.work__title {
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+.work__list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
-.work-list-item {
+.work__list-item {
   display: flex;
   position: relative;
 }
-.work-item {
+.work__list-text {
   display: flex;
   justify-content: center;
   font-weight: bold;
@@ -23,8 +27,4 @@
   padding: 27px 90px 27px 90px;
   width: 100%;
   top: 224px;
-}
-.work__title {
-  margin-top: 90px;
-  margin-bottom: 50px;
 }
