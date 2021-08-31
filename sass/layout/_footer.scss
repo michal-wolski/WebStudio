@@ -3,6 +3,13 @@
   background-color: #2f303a;
   padding-top: 60px;
 }
+
+.logo--light {
+  color: var(--third-color);
+}
+.logo--light > span {
+  color: var(--secondary-color);
+}
 .footer__staff {
   display: flex;
 }

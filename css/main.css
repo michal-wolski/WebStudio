@@ -68,14 +68,7 @@ button {
   list-style: none;
 }
 
-.link {
-  text-decoration: none;
-}
-
 a {
-  color: var(--main-color);
-  font-weight: 500;
-  font-size: 14px;
   list-style-type: none;
   text-decoration: none;
   transition-property: color;
@@ -275,8 +268,7 @@ a:focus {
   pointer-events: none;
 }
 
-.logo-header {
-  margin-right: 93px;
+.logo {
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
@@ -286,36 +278,10 @@ a:focus {
   transition-property: color;
 }
 
-.logo-header:hover {
+.logo:hover {
   color: var(--secondary-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header__logo--color {
-  color: var(--secondary-color);
-}
-
-.footer__logo {
-  padding-top: 60px;
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  color: var(--third-color);
-  text-decoration: none;
-  transition-property: color;
-}
-
-.footer__logo:hover {
-  color: var(--secondary-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer__logo--color {
-  color: var(--secondary-color);
 }
 
 .h2-title {
@@ -339,11 +305,20 @@ a:focus {
   border-bottom: 1px solid #ececec;
 }
 
-.header__container {
+.container--header {
   display: flex;
   padding-top: 24px;
   padding-bottom: 25px;
   align-items: center;
+}
+
+.logo--dark {
+  margin-right: 93px;
+  color: var(--main-color);
+}
+
+.logo--dark > span {
+  color: var(--secondary-color);
 }
 
 .header__navigation {
@@ -354,6 +329,13 @@ a:focus {
 .header__navigation-list {
   display: flex;
   gap: 46px;
+}
+
+.header__navigation--link {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .header__navigation-icon {
@@ -373,7 +355,7 @@ a:focus {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -32px;
+  bottom: -33px;
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -393,11 +375,19 @@ a:focus {
 
 .header__navigation-mail {
   color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 
 .header__navigation-tel {
   margin-left: 50px;
   color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 
 .header__navigation-tel:hover {
@@ -618,6 +608,14 @@ a:focus {
   text-decoration: none;
   background-color: #2f303a;
   padding-top: 60px;
+}
+
+.logo--light {
+  color: var(--third-color);
+}
+
+.logo--light > span {
+  color: var(--secondary-color);
 }
 
 .footer__staff {
