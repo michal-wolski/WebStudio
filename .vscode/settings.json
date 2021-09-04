@@ -11,11 +11,8 @@
       "savePath": "/css"
     }
   ],
-  "liveSassCompile.settings.excludeList": [
-    "**/node_modules/**",
-    ".vscode/**"
-  ],
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
   "liveSassCompile.settings.generateMap": true,
-  "liveServer.settings.port": 5501,
+  "liveServer.settings.port": 5502,
   "liveSassCompile.settings.autoprefix": null
 }
