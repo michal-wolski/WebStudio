@@ -1,0 +1,15 @@
+.contact__adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.logo--contact {
+  color: var(--main-color);
+}
+
+.logo--contact > span {
+  color: var(--secondary-color);
+}
+/*# sourceMappingURL=contact.css.map */
